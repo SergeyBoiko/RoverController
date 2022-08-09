@@ -21,7 +21,7 @@ public class Rover
 
     private bool IsRoverOnPlateau()
     {
-        return X >= 0 && X < _plateau.SizeX && Y >= 0 && Y < _plateau.SizeY;
+        return X >= 0 && X <= _plateau.SizeX && Y >= 0 && Y <= _plateau.SizeY;
     }
 
     private void RotateRover(char relativeDirection)
