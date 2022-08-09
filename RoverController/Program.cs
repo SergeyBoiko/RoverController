@@ -10,5 +10,4 @@ roverTwo.Start();
 
 Console.WriteLine("Rover one: {0},{1},{2}", roverOne.X, roverOne.Y, roverOne.CardinalDirection);
 Console.WriteLine("Rover two: {0},{1},{2}", roverTwo.X, roverTwo.Y, roverTwo.CardinalDirection);
-
 Console.ReadKey();
