@@ -24,7 +24,7 @@ public class Rover
         return X >= 0 && X <= _plateau.SizeX && Y >= 0 && Y <= _plateau.SizeY;
     }
 
-    private void RotateRover(char relativeDirection)
+    private void Rotate(char relativeDirection)
     {
         if (relativeDirection == 'L')
         {
@@ -48,16 +48,16 @@ public class Rover
         {
             if (command.Equals('M'))
             {
-                MoveRover();
+                Move();
             }
             else
             {
-                RotateRover(command);
+                Rotate(command);
             }
         }
     }
 
-    private void MoveRover()
+    private void Move()
     {
         switch (CardinalDirection)
         {
